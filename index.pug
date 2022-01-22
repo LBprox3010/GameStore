@@ -1,0 +1,444 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Games Store
+        link(rel="stylesheet", href="./asset/css/style.css")
+
+        script(type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
+        script( nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js") 
+        script(src="./asset/js/main.js") 
+    body 
+        .wrapper 
+            //- ion-icon.icon-goToTop(name="chevron-up-outline")
+            .header
+                .header-menu
+                    ul.menu
+                        .logo
+                            p YourLogo
+                        li.menu-item.menu-active
+                            a.menu-link(href="#") store
+                        li.menu-item 
+                            a.menu-link(href="#") faq
+                        li.menu-item 
+                            a.menu-link(href="#") help
+                        li.menu-item 
+                            a.menu-link(href="#") unreal engine
+                    .header-options
+                        //- ion-icon.icon.icon-language(name="language-outline")
+                        a.sign-in(href="#")
+                            ion-icon.icon(name="person-circle-outline")
+                            span sign in
+                        li.download-item
+                            a.download-btn(href="#") Download
+                ul.banner-menu
+                        .search
+                            ion-icon.icon.search-icon(name="search-outline")
+                            input.search-item(type="text" placeholder="Search")
+                        li.banner-menu__item
+                            a.banner-menu__link.banner-active(href="#") Discover
+                        li.banner-menu__item
+                            a.banner-menu__link(href="#") Browse
+                        li.banner-menu__item
+                            a.banner-menu__link(href="#") News
+            .container  
+                section.banner 
+                    .banner-show
+                        .show-img__box
+                            .show-img__item
+                                img.show-img(src="./asset/img/GOW-OG-image.jpg")
+                                p.show-desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus quidem iusto, aspernatur et aperiam cumque!
+                                button.show-btn BUY NOW
+                        .show-list
+                            .show-list__item.show-list__active
+                                    img.list-img__item(src="./asset/img/GOW-OG-image.jpg")
+                                    p.title God of War
+                            .show-list__item
+                                    img.list-img__item(src="./asset/img/RocketLeague.jpg")
+                                    p.title Rocket League
+                            .show-list__item
+                                    img.list-img__item(src="./asset/img/far cry 6.jpg")
+                                    p.title Far Cry 6
+                            .show-list__item
+                                    img.list-img__item(src="./asset/img/sifu.png")
+                                    p.title Sifu
+                            .show-list__item
+                                    img.list-img__item(src="./asset/img/raiders republic.jpg")
+                                    p.title Raiders Republic
+                            .show-list__item
+                                    img.list-img__item(src="./asset/img/rainbow six.jpg")
+                                    p.title Rainbow Six
+                section.game-sale
+                    h3.game-sale__title Games On Sale
+                    .game-sale__box 
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/sheepo.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title Sheepo
+                                button.new-add New to Epic
+                                .sale-price
+                                    .sale-price__left
+                                    button.percent -30%
+                                    .sale-price__right
+                                    p.old-price 93,000
+                                    span.new-price 65,100
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/dead cells.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title Dead Cells
+                                button.new-add New to Epic
+                                .sale-price
+                                    .sale-price__left
+                                    button.percent -50%
+                                    .sale-price__right
+                                    p.old-price 231,000
+                                    span.new-price 115,000
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/GCW.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title golf club wasteland
+                                //- button.new-add New to Epic
+                                .sale-price
+                                    .sale-price__left
+                                    button.percent -50%
+                                    .sale-price__right
+                                    p.old-price 120,000
+                                    span.new-price 60,000
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/outerverse.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title outerverse
+                                button.new-add New to Epic
+                                .sale-price
+                                    .sale-price__left
+                                    button.percent -20%
+                                    .sale-price__right
+                                    p.old-price 140,000
+                                    span.new-price 112,100
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/warshmallows.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title Warshmallows
+                                //- button.new-add New to Epic
+                                .sale-price
+                                    .sale-price__left
+                                    button.percent -70%
+                                    .sale-price__right
+                                    p.old-price 93,000
+                                    span.new-price 27,900
+                        a.game-sale__item(href="#")
+                            .sale-img__item.opacity-hover
+                                img.sale-img(src="./asset/img/cartuningsimulator.jpg", alt="#")
+                            .sale-desc
+                                h4.sale-desc__title car tuning simulator
+                                //- button.new-add New to Epic
+                                .sale-price
+                                    //- .sale-price__left
+                                    //- button -30%
+                                    .sale-price__right
+                                    //- p.old-price 90,000
+                                    span.new-price 65,000
+                section.hot-game
+                    .hot-game__item
+                        a.hot-game__img.opacity-hover(href="#")
+                            img(src="./asset/img/darkest.jpeg", alt="")
+                        .hot-game__content
+                            a.hot-game__title(href="#") Darkest II - Now Available!
+                            p.hot-game__desc Experience gripping turn-based combat and unforgettable art in this challenging RPG.
+                            p.hot-game__price 280,000
+                    .hot-game__item
+                        a.hot-game__img.opacity-hover(href="#")
+                            img(src="./asset/img/farcay6control.webp", alt="")
+                        .hot-game__content
+                            a.hot-game__title(href="#") Far Cry 6 DLC Episode 2 Control
+                            p.hot-game__desc Become the villain as you step into the flamboyantly eccentric mind of Pagan Min from Far Cry 4. Available now!
+                            p.hot-game__price 249,000
+                section.free-game
+                    .free-game__header 
+                        .fg__header-left
+                            ion-icon.icon(name="gift-outline")
+                            h2.free-game__title Free Games
+                        a.btn.btn-viewMore.opacity-hover__bkg(href="#") VIEW MORE
+                    .free-game__banner
+                        .free-game__item
+                            a.free-game__img(href="#")
+                                .fg-img__box.opacity-hover
+                                    img.img-item(src="./asset/img/galactic.jpg", alt="")
+                                p.img-item__desc FREE NOW
+                            .free-game__desc   
+                                p.fg-item__title Galactic Civilizations III
+                                p.fg-item__date Free Now - Jan 20 at 11:00 PM
+                        .free-game__item
+                            a.free-game__img(href="#")
+                                .fg-img__box.opacity-hover
+                                    img.img-item(src="./asset/img/relicta.jpg", alt="")
+                                p.img-item__desc.img-item__desc-secondary COMING SOON
+                            .free-game__desc   
+                                p.fg-item__title Relicta
+                                p.fg-item__date Free Jan 20 - Jan 27
+                section.tab-game
+                    .tab-game__newReleases.tab-game__item.line-right
+                        .tab-game__header
+                            h4 New Releases
+                            a.btn-viewMore.btn.opacity-hover__bkg(href="#") VIEW MORE
+                        .tab-game__list    
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/GOW-OG-image.jpg", alt="")
+                                .tl-item__desc
+                                    p.title God Of War
+                                    p.new-price.price 1,139,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/itfollowsyou.jpg", alt="")
+                                .tl-item__desc
+                                    p.title It Follows You
+                                    .price_desc
+                                        button.percent.price -25%
+                                        p.old-price.price 19,000
+                                        p.new-price.price 14,250
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/rescuepartylive.jpeg", alt="")
+                                .tl-item__desc
+                                    p.title rescue party: live!
+                                    p.new-price.price 186,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/farmersdynasty.png", alt="")
+                                .tl-item__desc
+                                    p.title Farmer's dynasty
+                                    button.new-add.price NEW TO EPIC
+                                    .price_desc
+                                        button.percent.price -50%
+                                        p.old-price.price 280,000
+                                        p.new-price.price 140,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/thesurvivalseries.jpg", alt="")
+                                .tl-item__desc
+                                    p.title AWAY: The Survival Series
+                                    .price_desc 
+                                        button.percent.price -35%
+                                        p.old-price.price 280,000
+                                        p.new-price.price 182,000
+                    .tab-game__topSellers.tab-game__item.line-right
+                        .tab-game__header
+                            h4 Top Sellers
+                            a.btn-viewMore.btn.opacity-hover__bkg(href="#") VIEW MORE    
+                        .tab-game__list    
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/GOW-OG-image.jpg", alt="")
+                                .tl-item__desc
+                                    p.title God Of War
+                                    p.new-price.price 1,139,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/Genshin Impact.jpeg", alt="")
+                                .tl-item__desc
+                                    p.title Genshin Impact
+                                    p.new-price.price Free
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/NARAKABLADEPOINT.jpeg", alt="")
+                                .tl-item__desc
+                                    p.title NARAKA: BLADEPOINT
+                                    p.new-price.price 360,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/GTAV.png", alt="")
+                                .tl-item__desc
+                                    p.title Grand Theft Auto V
+                                    p.new-price.price 455,500
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/dead by daylight.png", alt="")
+                                .tl-item__desc
+                                    p.title dead by daylight
+                                    p.new-price.price 220,000                 
+                    .tab-game__comingSoon.tab-game__item
+                        .tab-game__header
+                            h4 Coming Soon
+                            a.btn-viewMore.btn.opacity-hover__bkg(href="#") VIEW MORE
+                        .tab-game__list    
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/Strategic MindThe Pacific.jpeg", alt="")
+                                .tl-item__desc
+                                    p.title Strategic Mind: The Pacific
+                                    p.desc Available 01/09/22
+                                    button.new-add.price NEW TO EPIC
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/Fight for Freedom.jpg", alt="")
+                                .tl-item__desc
+                                    p.title Strategic Mind: Fight for Freedom
+                                    p.desc Available 01/19/22
+                                    button.new-add.price NEW TO EPIC
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/Extraction.jpg", alt="")
+                                .tl-item__desc
+                                    p.title Tom Clancy’s Rainbow Six® Extraction
+                                    p.desc Available 01/20/22
+                                    p.new-price.price 660,000
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/ExpeditionsRome.jpeg", alt="")
+                                .tl-item__desc
+                                    p.title Expeditions: Rome
+                                    p.desc Available 01/21/22
+                                    .price_desc
+                                        button.percent.price -20%
+                                        p.old-price.price 499,950
+                                        p.new-price.price 399,960
+                            a.tab-list__item.opacity-hover__bkg(href="#")  
+                                .tl-item__img
+                                    img(src="./asset/img/Strange Horticulture", alt="")
+                                .tl-item__desc
+                                    p.title Strange Horticulture
+                                    p.desc Available 01/21/22
+                section.hot-game
+                    .hot-game__item
+                        a.hot-game__img.opacity-hover(href="#")
+                            img(src="./asset/img/finalfantasyVII.jpeg", alt="")
+                        .hot-game__content
+                            a.hot-game__title(href="#") final fantasy VII
+                            p.hot-game__desc The timeless classic FINAL FANTASY® VII REMAKE INTERGRADE is reborn with a new battle system, upgraded graphics, and additional adventure.
+                            p.hot-game__price 1,799,000
+                    .hot-game__item
+                        a.hot-game__img.opacity-hover(href="#")
+                            img(src="./asset/img/neverwinterfreepack.jpeg", alt="")
+                        .hot-game__content
+                            a.hot-game__title(href="#") Neverwinter - Free Pack
+                            p.hot-game__desc Claim your free “Calamity of Undeath” pack and survive the rise of the dracolich in Neverwinter: Dragonbone Vale.
+                            p.hot-game__price Free
+                section.recently.show-game.show
+                    .show-header
+                        a(href="#")  Recently Update
+                    .show-box
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Aeterna Noctis.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Aeterna Noctis
+                                p.show-content__price 250,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/HOT WHEELS UNLEASHED.jpeg", alt="")
+                            .show-content
+                                p.show-content__title HOT WHEELS UNLEASHED
+                                p.show-content__price 499,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/EVE Online.png", alt="")
+                            .show-content
+                                p.show-content__title EVE Online
+                                p.show-content__price Free
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Train Sim World.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Train Sim World 2
+                                p.show-content__price 250,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/dead by daylight.png", alt="")
+                            .show-content
+                                p.show-content__title Dead by Daylight
+                                p.show-content__price 220,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Rogue Company.jpg", alt="")
+                            .show-content
+                                p.show-content__title Rogue Company
+                                p.show-content__price Free
+                section.popular.show-game.show
+                    .show-header
+                        a(href="#")  Most Popular
+                    .show-box
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/GTAV.png", alt="")
+                            .show-content
+                                p.show-content__title Grand Theft Auto V
+                                p.show-content__price 455,500
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/NARAKABLADEPOINT.jpeg", alt="")
+                            .show-content
+                                p.show-content__title NARAKA: BLADEPOINT
+                                p.show-content__price 360,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Rise of the Tomb.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Rise of the Tomb Raider: 20 Year Celebration
+                                p.show-content__price 1,250,000
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Shadow of the Tomb.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Shadow of the Tomb Raider: Definitive Edition
+                                p.show-content__price 1,035,760
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Tomb Raider GOTY.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Tomb Raider GOTY
+                                p.show-content__price 470,500
+                        a.show-item(href="#")
+                            .show-img__box.opacity-hover
+                                img.show-img__item(src="./asset/img/Red Dead Redemption 2.jpeg", alt="")
+                            .show-content
+                                p.show-content__title Aeterna Noctis
+                                p.show-content__price 1,000,000
+            footer.footer
+                .footer__header
+                    a(href="#")
+                        ion-icon.footer__icon.footer-hover(name="logo-facebook")
+                    a(href="#") 
+                        ion-icon.footer__icon.footer-hover(name="logo-twitter")
+                    a(href="#") 
+                        ion-icon.footer__icon.footer-hover(name="logo-youtube")
+                .footer__resources 
+                    h4.resources-title Resources
+                    .footer-item__box
+                        .resources-item1.footer-item
+                            a.footer-hover(href="#") Support-A-Creator 
+                            a.footer-hover(href="#") Publish on Epic Games
+                            a.footer-hover(href="#") Careers
+                            a.footer-hover(href="#") Company
+                        .resources-item2.footer-item
+                            a.footer-hover(href="#") Fan Art policy
+                            a.footer-hover(href="#") UX Research
+                            a.footer-hover(href="#") Store EULA
+                        .resources-item3.footer-item      
+                            a.footer-hover(href="#") Online Service
+                            a.footer-hover(href="#") Community Rules
+                            a.footer-hover(href="#") Epic Newsroom
+                .footer__madeIn
+                    h4.madeIn-title Made by Epic Games
+                    .footer-item__box
+                        .madeIn-item1.footer-item
+                            a.footer-hover(href="#") Battle Breakers
+                            a.footer-hover(href="#") Fortnite
+                            a.footer-hover(href="#") Infinity Blade
+                        .madeIn-item2.footer-item
+                            a.footer-hover(href="#") Robo Recall
+                            a.footer-hover(href="#") Shadow Complex 
+                            a.footer-hover(href="#") Unreal Tournament
+                .footer__info
+                    p © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners. Non-US transactions through Epic Games International, S.à r.l.   
+                .footer__end
+                    a.footer-hover(href="#") Terms of Service
+                    a.footer-hover(href="#") Privacy Policy
+                    a.footer-hover(href="#") Store Refund Policy 

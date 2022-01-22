@@ -1,0 +1,75 @@
+.footer {
+  background: #202020;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 5.7rem 4rem 5.7rem;
+  &__icon {
+    color: $textColor;
+    height: 3.1rem;
+    width: 3.1rem;
+    margin-right: 2rem;
+  }
+  &__header {
+    margin-bottom: 3rem;
+  }
+  .footer-hover {
+    transition: all 0.15s linear;
+    &:hover {
+      color: #0078f2;
+    }
+  }
+  h4 {
+    font-size: 1.376rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: rgba(204, 204, 204, 0.4);
+    margin-bottom: 0.9rem;
+  }
+  &-item__box {
+    display: flex;
+    gap: 3rem;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    a {
+      color: #e7e7e7;
+      font-size: 1.3rem;
+    }
+  }
+  .footer__end a {
+    color: #e7e7e7;
+    font-size: 1.3rem;
+  }
+  &__resources {
+    margin-bottom: 2.2rem;
+  }
+  &__madeIn {
+    position: relative;
+    padding-bottom: 3.2rem;
+    margin-bottom: 4rem;
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: " ";
+      background: rgba(204, 204, 204, 0.2);
+      left: 0;
+      bottom: 0;
+    }
+  }
+  p {
+    font-size: 1.136rem;
+    color: #ccc;
+    line-height: 2.272rem;
+    max-width: 72.7rem;
+    text-align: justify;
+    margin-bottom: 3.5rem;
+  }
+  &__end {
+    a {
+      margin-right: 1.6rem;
+    }
+  }
+}

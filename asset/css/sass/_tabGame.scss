@@ -1,0 +1,90 @@
+.tab-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 5rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    margin-left: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 16px;
+  }
+  h4 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: $textColor;
+    letter-spacing: -0.5px;
+  }
+  &__item {
+    padding-inline: 1.7rem;
+    flex: 1;
+    position: relative;
+  }
+  .line-right::before {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 1px;
+    background: rgba(204, 204, 204, 0.2);
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  .tab-game__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tab-list__item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    border-radius: 16px;
+    padding: 1.6rem 3.2rem;
+    transition: all 0.15s linear;
+  }
+  .tl-item__img {
+    width: 9.6rem;
+    height: 12.8rem;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .tl-item__desc {
+    flex: 1;
+  }
+  .title {
+    color: $textColor;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15.5rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .price_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .new-add {
+    margin-bottom: 1rem;
+  }
+  .desc {
+    margin-bottom: 5px;
+    color: rgba(245, 245, 245, 0.4);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

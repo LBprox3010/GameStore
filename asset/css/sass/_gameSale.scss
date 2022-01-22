@@ -1,0 +1,56 @@
+.game-sale {
+  padding-block: 5rem;
+}
+.game-sale__title {
+  color: $textColor;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2.3rem;
+  letter-spacing: 1px;
+}
+.game-sale__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.game-sale__item {
+  width: 17.3rem;
+  height: 34.3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sale-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sale-img__item {
+  border-radius: 6px;
+  overflow: hidden;
+  height: 23.1rem;
+  position: relative;
+  cursor: pointer;
+}
+.sale-desc {
+  .sale-desc__title {
+    display: block;
+    width: 100%;
+    color: $textColor;
+    letter-spacing: 0.2px;
+    line-height: 2.25rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem 0;
+    text-transform: capitalize;
+  }
+  .sale-price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .sale-price__right {
+    margin-left: auto;
+  }
+}
